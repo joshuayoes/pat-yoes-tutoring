@@ -1,15 +1,21 @@
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
-Wordpress2016.overrideThemeStyles = () => {
-  return {
+Wordpress2016.overrideThemeStyles = () => ({
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
-  }
-}
+});
 
-delete Wordpress2016.googleFonts
+Wordpress2016.googleFonts = [{
+  name: "Open Sans",
+  styles: [
+    '700',
+    '300'
+  ]
+}];
+Wordpress2016.headerFontFamily = ['Open Sans', 'sans-serif'];
+Wordpress2016.bodyFontFamily = ['Open Sans', 'sans-serif'];
 
 const typography = new Typography(Wordpress2016)
 
