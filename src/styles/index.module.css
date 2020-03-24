@@ -82,7 +82,7 @@
 /* About section */
 .about {
   height: 100vh;
-  padding: 40px;
+  padding: 35px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -91,7 +91,6 @@
 }
 
 .about_h1 {
-  align-self: flex-start;
   margin: 20px 0;
 }
 

@@ -29,8 +29,8 @@ const Index = ({ data, location }) => {
       </section>
       <section className={style.about}>
         <img className={style.aboutSvg} src={aboutSvg} alt='Illustration of Pat in front of a chalkboard' />
-        <h1 className={[style.h1, style.about_h1].join(' ')}>About Pat</h1>
-        <p className={style.p}>Pat Yoes has worked as a private tutor, public school teacher, and a tutoring business owner for over 30 years. He specializes in reading, math, writing, education counseling, and one-on-one tutoring.</p>
+        <h1 className={[style.h1, style.about_h1, style.center].join(' ')}>About Pat</h1>
+        <p className={[style.p, style.center].join(' ')}>Pat Yoes has worked as a private tutor, public school teacher, and a tutoring business owner for over 30 years. He specializes in reading, math, writing, education counseling, and one-on-one tutoring.</p>
       </section>
       <section className={style.strengths}>
         <Strength 
