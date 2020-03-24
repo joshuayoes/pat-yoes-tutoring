@@ -11,7 +11,15 @@ const BlogIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} >
+      <div 
+        style={{
+          marginLeft: `auto`,
+          marginRight: `auto`,
+          maxWidth: rhythm(24),
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        }}
+      >
       <SEO title="All posts" />
       <Bio />
       {posts.map(({ node }) => {
@@ -40,6 +48,8 @@ const BlogIndex = ({ data, location }) => {
           </article>
         )
       })}
+      </div>
+
     </Layout>
   )
 }

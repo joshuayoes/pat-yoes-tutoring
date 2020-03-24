@@ -1,0 +1,81 @@
+/* Design system styles */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --pat-green: #297b2e;
+  --almost-white: #f8f8f8;
+  --almost-black: #162918;
+  --background: #e5e5e5;
+}
+
+.background {
+  background-color: var(--background);
+}
+
+.h1,
+.h2,
+.h3,
+.p {
+  font-family: "Open Sans", sans-serif;
+  color: var(--almost-black);
+}
+
+.h1,
+.h2,
+.h3 {
+  font-weight: bold;
+}
+
+.h1 {
+  font-size: 32px;
+  margin: 20px;
+}
+
+.h2 {
+  font-size: 26px;
+}
+
+.h3 {
+  font-size: 20px;
+}
+
+.p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+  border: none;
+  background: var(--pat-green) 0% 0% no-repeat padding-box;
+  border-radius: 33px;
+  padding: 20px 90px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Hero Unit */
+.hero {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("../../static/hero-background.svg");
+  background-repeat: repeat;
+}
+
+.heroSvg {
+  margin: 0;
+}

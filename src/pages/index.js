@@ -5,20 +5,27 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import style from '../styles/index.module.css'
+import laptopImg from '../../static/laptop.svg'
 
-const BlogIndex = ({ data, location }) => {
+const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
-      <h1>Hello</h1>
+      <section className={style.hero}> 
+        <img className={style.heroSvg} src={laptopImg} alt='Illustration of Pat video calling on laptop' />
+        <h1 className={[style.h1, style.center].join(' ')}>Pat Yoes Tutoring</h1>
+        <p className={[style.p, style.center].join(' ')}>Expert one-on-one remote tutoring in <br /> the convenience of your own home</p>
+        <button className={style.button}>Book Now</button>
+      </section>
     </Layout>
   )
 }
 
-export default BlogIndex
+export default Index
 
 export const pageQuery = graphql`
   query {
