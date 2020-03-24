@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Pat Yoes Online Tutoring`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Pat Yoes`,
+      summary: `Pat has worked as a private tutor, public school teacher, and a tutoring business owner for over 30 years. He specializes in reading, math, writing, education counseling, and one-on-one tutoring.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Online tutoring by Pat Yoes from Vancouver, Washington.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      facebook: `patyoestutoring`
     },
   },
   plugins: [
