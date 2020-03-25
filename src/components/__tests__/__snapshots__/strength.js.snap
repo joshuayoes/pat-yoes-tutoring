@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Strength fails when not required props 1`] = `
+<div
+  className="strength"
+>
+  <div
+    className="img_wrapper"
+  >
+    <img
+      alt="Award icon"
+      className="img"
+    />
+  </div>
+  <h2
+    className="h2"
+  >
+    Decades of Experience
+  </h2>
+  <p
+    className="p"
+  >
+    Pat has experience in multiple educational roles in his career, giving him a deep breadth of experience to draw from.
+  </p>
+</div>
+`;
+
+exports[`Strength renders correctly 1`] = `
+<div
+  className="strength"
+>
+  <div
+    className="img_wrapper"
+  >
+    <img
+      alt="Award icon"
+      className="img"
+      src="../../../static/icon-decades-of-experience.svg"
+    />
+  </div>
+  <h2
+    className="h2"
+  >
+    Decades of Experience
+  </h2>
+  <p
+    className="p"
+  >
+    Pat has experience in multiple educational roles in his career, giving him a deep breadth of experience to draw from.
+  </p>
+</div>
+`;
