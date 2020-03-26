@@ -192,10 +192,6 @@
   max-width: 400px;
 }
 
-.booking img {
-  padding-right: 40px;
-}
-
 .booking form > div {
   margin: 10px 0;
 }
@@ -203,6 +199,9 @@
 @media only screen and (min-width: 708px) {
   .booking {
     flex-direction: row;
+  }
+  .booking img {
+    padding-right: 40px;
   }
 }
 
