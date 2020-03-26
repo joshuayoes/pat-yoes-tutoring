@@ -217,5 +217,16 @@
 }
 
 .contact_h1 {
-  margin: 20px 0 0;
+  margin: 20px 0 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .contact {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .contactSvg {
+    margin-left: 40px;
+  }
 }

@@ -77,21 +77,22 @@ const Index = ({ data, location }) => {
         <Booking />
       </section>
       <section className={style.contact}>
-        <img src={contactSvg} alt="Illustration of man in front of email letter and chat bubbles" />
-        <h1 className={[style.h1, style.contact_h1].join(' ')}>Contact</h1>
-        <ContactItem
-          icon={emailIcon}
-          alt='Email icon'
-          contact='patyoes@yahoo.com'
-          link='mailto:patyoes@yahoo.com'
-        />
-        <ContactItem
-          icon={phoneIcon}
-          alt='Phone icon'
-          contact='(360) 521-8486'
-          link='tel:13605218486'
-        />
-
+        <img src={contactSvg} alt="Illustration of man in front of email letter and chat bubbles" className={style.contactSvg} />
+        <div>
+          <h1 className={[style.h1, style.contact_h1].join(' ')}>Contact</h1>
+          <ContactItem
+            icon={emailIcon}
+            alt='Email icon'
+            contact='patyoes@yahoo.com'
+            link='mailto:patyoes@yahoo.com'
+          />
+          <ContactItem
+            icon={phoneIcon}
+            alt='Phone icon'
+            contact='(360) 521-8486'
+            link='tel:13605218486'
+          />
+        </div>
       </section>
     </Layout>
   )
