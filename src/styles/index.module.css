@@ -152,11 +152,12 @@
 
 /* Strengths section */
 .strengths {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
   align-items: center;
+  justify-items: center;
   justify-content: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
   min-height: 100vh;
   background-color: var(--background);
   padding-bottom: 56px;
@@ -167,6 +168,11 @@
 }
 
 @media only screen and (min-width: 708px) {
+  .strengths {
+    grid-template-columns: 350px 350px;
+    grid-template-rows: auto auto;
+  }
+
   .strengths > :nth-child(2) {
     margin-top: -36px;
   }
