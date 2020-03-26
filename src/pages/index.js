@@ -32,7 +32,10 @@ const Index = ({ data, location }) => {
         <img className={style.heroSvg} src={laptopSvg} alt='Illustration of Pat video calling on laptop' />
         <h1 className={[style.h1, style.center].join(' ')}>Pat Yoes Tutoring</h1>
         <p className={[style.p, style.center].join(' ')}>Expert one-on-one remote tutoring in <br /> the convenience of your own home</p>
-        <button className={style.button}>Book Now</button>
+        <button 
+          className={style.button}
+          onClick={() => document.getElementById('booking').scrollIntoView({ behavior: "smooth"})}
+          >Book Now</button>
       </section>
       <section className={style.about}>
         <img className={style.aboutSvg} src={aboutSvg} alt='Illustration of Pat in front of a chalkboard' />
@@ -65,7 +68,7 @@ const Index = ({ data, location }) => {
           description='Plan for long term success: Pat will help construct a solid foundation for your child to grow their skills on.' 
         />
       </section>
-      <section className={style.booking}>
+      <section id="booking" className={style.booking}>
         <img src={bookingSvg} alt='Illustration of a woman in front of a calendar' />
         <Booking />
       </section>

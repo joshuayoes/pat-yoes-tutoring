@@ -10,6 +10,8 @@
   --almost-white: #f8f8f8;
   --almost-black: #162918;
   --background: #e5e5e5;
+
+  scroll-behavior: smooth;
 }
 
 .background {
