@@ -4,10 +4,13 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Strength from "../components/strength"
+import Booking from '../components/booking'
+
 import style from '../styles/index.module.css'
 
 import laptopSvg from '../../static/illustration-laptop.svg'
 import aboutSvg from '../../static/illustration-about.svg'
+import bookingSvg from '../../static/illustration-booking.svg'
 import decadesOfExperienceIcon from '../../static/icon-decades-of-experience.svg'
 import personalTouchIcon from '../../static/icon-personal-touch.svg'
 import localKnowledgeIcon from '../../static/icon-local-knowledge.svg'
@@ -57,6 +60,10 @@ const Index = ({ data, location }) => {
           heading='Educational Guidance'
           description='Plan for long term success: Pat will help construct a solid foundation for your child to grow their skills on.' 
         />
+      </section>
+      <section className={style.booking}>
+        <img src={bookingSvg} alt='Illustration of a woman in front of a calendar' />
+        <Booking />
       </section>
     </Layout>
   )
