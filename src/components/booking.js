@@ -46,7 +46,7 @@ const Booking = () => {
     }
     
     return (
-        <>
+        <div>
             <h1 className={style.h1}>Book Your First Free Appointment</h1>
             <form onSubmit={handleSubmit}>
                 <TextField 
@@ -82,7 +82,7 @@ const Booking = () => {
                 />
                 <input type="submit" value="Book" className={style.button} />
             </form>
-        </>
+        </div>
     )
 }
 

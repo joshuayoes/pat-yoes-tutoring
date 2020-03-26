@@ -185,7 +185,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 40px;
+}
+
+.booking div {
+  max-width: 400px;
+}
+
+.booking img {
+  padding-right: 40px;
+}
+
+.booking form > div {
+  margin: 10px 0;
+}
+
+@media only screen and (min-width: 708px) {
+  .booking {
+    flex-direction: row;
+  }
 }
 
 /* Contact section */
