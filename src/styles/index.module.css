@@ -200,7 +200,7 @@
   .booking {
     flex-direction: row;
   }
-  .booking img {
+  .bookingSvg {
     padding-right: 40px;
   }
 }

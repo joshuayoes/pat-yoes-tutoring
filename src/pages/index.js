@@ -73,7 +73,11 @@ const Index = ({ data, location }) => {
         />
       </section>
       <section id="booking" className={style.booking}>
-        <img src={bookingSvg} alt='Illustration of a woman in front of a calendar' />
+        <img 
+          src={bookingSvg} 
+          alt='Illustration of a woman in front of a calendar'
+          className={style.bookingSvg} 
+        />
         <Booking />
       </section>
       <section className={style.contact}>
