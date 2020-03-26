@@ -30,17 +30,21 @@ const Index = ({ data, location }) => {
       <SEO title="Home" />
       <section className={style.hero}> 
         <img className={style.heroSvg} src={laptopSvg} alt='Illustration of Pat video calling on laptop' />
-        <h1 className={[style.h1, style.center].join(' ')}>Pat Yoes Tutoring</h1>
-        <p className={[style.p, style.center].join(' ')}>Expert one-on-one remote tutoring in <br /> the convenience of your own home</p>
-        <button 
-          className={style.button}
-          onClick={() => document.getElementById('booking').scrollIntoView({ behavior: "smooth"})}
-          >Book Now</button>
+        <div>
+          <h1 className={[style.h1, style.center].join(' ')}>Pat Yoes Tutoring</h1>
+          <p className={[style.p, style.center].join(' ')}>Expert one-on-one remote tutoring in <br /> the convenience of your own home</p>
+          <button 
+            className={style.button}
+            onClick={() => document.getElementById('booking').scrollIntoView({ behavior: "smooth"})}
+            >Book Now</button>
+        </div>
       </section>
       <section className={style.about}>
         <img className={style.aboutSvg} src={aboutSvg} alt='Illustration of Pat in front of a chalkboard' />
-        <h1 className={[style.h1, style.about_h1, style.center].join(' ')}>About Pat</h1>
-        <p className={[style.p, style.center].join(' ')}>Pat Yoes has worked as a private tutor, public school teacher, and a tutoring business owner for over 30 years. He specializes in reading, math, writing, education counseling, and one-on-one tutoring.</p>
+        <div>
+          <h1 className={[style.h1, style.about_h1, style.center].join(' ')}>About Pat</h1>
+          <p className={[style.p, style.center].join(' ')}>Pat Yoes has worked as a private tutor, public school teacher, and a tutoring business owner for over 30 years. He specializes in reading, math, writing, education counseling, and one-on-one tutoring.</p>
+        </div>
       </section>
       <section className={style.strengths}>
         <Strength 
@@ -65,7 +69,7 @@ const Index = ({ data, location }) => {
           svg={educationalGuidanceIcon}
           alt='Sign icon'
           heading='Educational Guidance'
-          description='Plan for long term success: Pat will help construct a solid foundation for your child to grow their skills on.' 
+          description='Plan for long term educational success: Pat will help construct a solid foundation for your child to grow their skills on.' 
         />
       </section>
       <section id="booking" className={style.booking}>

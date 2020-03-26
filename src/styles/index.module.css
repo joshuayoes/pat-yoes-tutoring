@@ -77,8 +77,27 @@
   background-repeat: repeat;
 }
 
+.hero div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .heroSvg {
   margin: 0;
+}
+
+@media only screen and (min-width: 900px) {
+  .hero {
+    flex-direction: row-reverse;
+  }
+
+  .heroSvg {
+    margin-left: 60px;
+    height: 280px;
+    width: auto;
+  }
 }
 
 /* About section */
@@ -86,6 +105,13 @@
   height: 100vh;
   padding: 35px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,15 +126,50 @@
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 600px) {
+  .about {
+    height: 70vh;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about div {
+    flex-direction: column;
+    align-items: start;
+    padding-left: 20px;
+    max-width: 350px;
+  }
+
+  .about h1,
+  .about p {
+    text-align: left;
+  }
+
+  .aboutSvg {
+    margin: 0;
+  }
+}
+
 /* Strengths section */
 .strengths {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background-color: var(--background);
   padding-bottom: 56px;
+}
+
+.strengths > :first-child {
+  margin-top: -36px;
+}
+
+@media only screen and (min-width: 708px) {
+  .strengths > :nth-child(2) {
+    margin-top: -36px;
+  }
 }
 
 /* Booking section */
