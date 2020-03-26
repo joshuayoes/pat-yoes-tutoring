@@ -118,3 +118,17 @@
   justify-content: center;
   padding: 20px;
 }
+
+/* Contact section */
+.contact {
+  background-color: var(--background);
+  min-height: 50vh;
+  padding: 80px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact_h1 {
+  margin: 20px 0 0;
+}

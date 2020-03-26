@@ -5,16 +5,20 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Strength from "../components/strength"
 import Booking from '../components/booking'
+import ContactItem from '../components/contactItem'
 
 import style from '../styles/index.module.css'
 
 import laptopSvg from '../../static/illustration-laptop.svg'
 import aboutSvg from '../../static/illustration-about.svg'
 import bookingSvg from '../../static/illustration-booking.svg'
+import contactSvg from '../../static/illustration-contact.svg'
 import decadesOfExperienceIcon from '../../static/icon-decades-of-experience.svg'
 import personalTouchIcon from '../../static/icon-personal-touch.svg'
 import localKnowledgeIcon from '../../static/icon-local-knowledge.svg'
 import educationalGuidanceIcon from '../../static/icon-educational-guidance.svg'
+import emailIcon from '../../static/icon-email.svg'
+import phoneIcon from '../../static/icon-phone.svg'
 
 
 const Index = ({ data, location }) => {
@@ -64,6 +68,23 @@ const Index = ({ data, location }) => {
       <section className={style.booking}>
         <img src={bookingSvg} alt='Illustration of a woman in front of a calendar' />
         <Booking />
+      </section>
+      <section className={style.contact}>
+        <img src={contactSvg} alt="Illustration of man in front of email letter and chat bubbles" />
+        <h1 className={[style.h1, style.contact_h1].join(' ')}>Contact</h1>
+        <ContactItem
+          icon={emailIcon}
+          alt='Email icon'
+          contact='patyoes@yahoo.com'
+          link='mailto:patyoes@yahoo.com'
+        />
+        <ContactItem
+          icon={phoneIcon}
+          alt='Phone icon'
+          contact='(360) 521-8486'
+          link='tel:13605218486'
+        />
+
       </section>
     </Layout>
   )
