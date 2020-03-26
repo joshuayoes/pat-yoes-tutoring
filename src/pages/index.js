@@ -26,12 +26,12 @@ const Index = ({ data, location }) => {
   // const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <main>
       <SEO title="Home" />
       <section className={style.hero}> 
         <img className={style.heroSvg} src={laptopSvg} alt='Illustration of Pat video calling on laptop' />
         <div>
-          <h1 className={[style.h1, style.center].join(' ')}>Pat Yoes Tutoring</h1>
+          <h1 className={[style.h1, style.center].join(' ')}>Pat Yoes Online Tutoring</h1>
           <p className={[style.p, style.center].join(' ')}>Expert one-on-one remote tutoring in <br /> the convenience of your own home</p>
           <button 
             className={style.button}
@@ -51,13 +51,13 @@ const Index = ({ data, location }) => {
           svg={decadesOfExperienceIcon}
           alt='Award icon'
           heading='Decades of Experience'
-          description='Pat has experience in multiple educational roles in his career, giving him a deep breadth of experience to draw from.'
+          description='Pat has experience in multiple educational roles in his career, giving him a deep breadth of experience on which to draw.'
         />
         <Strength
           svg={personalTouchIcon}
           alt='Handshake icon'
           heading='Personal Touch'
-          description='Pat specializes in one-on-one tutoring. Studies have shown that students preform better in school with individual support.'
+          description='Pat specializes in one-on-one tutoring. Studies have shown that students perform better in school with individual support.'
         />
         <Strength 
           svg={localKnowledgeIcon}
@@ -69,7 +69,7 @@ const Index = ({ data, location }) => {
           svg={educationalGuidanceIcon}
           alt='Sign icon'
           heading='Educational Guidance'
-          description='Plan for long term educational success: Pat will help construct a solid foundation for your child to grow their skills on.' 
+          description='Plan for long term educational success: Pat will help construct a solid foundation your child can use to grow their skills.' 
         />
       </section>
       <section id="booking" className={style.booking}>
@@ -98,7 +98,7 @@ const Index = ({ data, location }) => {
           />
         </div>
       </section>
-    </Layout>
+    </main>
   )
 }
 
