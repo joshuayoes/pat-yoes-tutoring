@@ -57,8 +57,6 @@ const Booking = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        fbq('track', 'Contact');
-
         postData('https://getform.io/f/5d72b9dd-f1f1-4360-a1a6-7c387be5f432', formInput)
             .then((response) => {
                 // console.log(response)

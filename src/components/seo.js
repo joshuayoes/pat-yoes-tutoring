@@ -63,7 +63,7 @@ const SEO = ({ description, lang, meta, title }) => {
         {
           property: `fb:app_id`,
           content: `597559947767257`
-        }
+        },
         {
           name: `twitter:card`,
           content: `summary`,
