@@ -4,8 +4,6 @@ date: "2020-03-26T22:12:03.284Z"
 description: "The COVID-19 epidemic has left many families in our community in a state of fear and uncertainty. From social distancing to school closures, parents are now having to face these new realities head on."
 ---
 
-# How to Keep Your Child Educated During COVID-19
-
 The COVID-19 epidemic has left many families in our community in a state of fear and uncertainty. From social distancing to school closures, parents are now having to face these new realities head on.
 
 Local school districts, including the Vancouver School District, have released a statement describing their plan to continue education through this crisis:

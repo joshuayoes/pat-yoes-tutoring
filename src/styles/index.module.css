@@ -158,7 +158,6 @@
   justify-content: center;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
-  min-height: 100vh;
   background-color: var(--background);
   padding-bottom: 56px;
 }
