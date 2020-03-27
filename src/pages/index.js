@@ -26,7 +26,7 @@ const Index = ({ data, location }) => {
 
   return (
     <main>
-      <SEO title="Home" />
+      <SEO title="Pat Yoes Online Tutoring" />
       <section className={style.hero}> 
         <img className={style.heroSvg} src={laptopSvg} alt='Illustration of Pat video calling on laptop' />
         <div>
