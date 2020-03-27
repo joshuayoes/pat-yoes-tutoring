@@ -6,7 +6,7 @@ module.exports = {
       summary: `Pat has worked as a private tutor, public school teacher, and a tutoring business owner for over 30 years. He specializes in reading, math, writing, education counseling, and one-on-one tutoring.`,
     },
     description: `Online tutoring by Pat Yoes from Vancouver, Washington.`,
-    siteUrl: `https://patyoes.com`,
+    siteUrl: `http://patyoes.com`,
     social: {
       facebook: `patyoestutoring`
     },
@@ -53,7 +53,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-162011936-1`,
+        head: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '151607629468159',
       },
     },
     `gatsby-plugin-feed`,

@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-
 :root {
   --pat-green: #297b2e;
   --almost-white: #f8f8f8;
@@ -17,7 +15,6 @@
 }
 
 .a p {
-  font-family: "Open Sans", sans-serif;
   color: var(--almost-black);
   font-size: 18px;
   padding: 7px 10px;
