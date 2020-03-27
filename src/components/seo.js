@@ -11,20 +11,26 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 const SEO = ({ description, lang, meta, title }) => {
-  const { site } = useStaticQuery(
+  const { site, ogImage } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
             description
+            siteUrl
           }
         }
+        ogImage: file(absolutePath: { regex: "/og-image.jpg/" }) {
+          publicURL
+        }      
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
+
+  const ogImageUrl = site.siteMetadata.siteUrl + ogImage.publicURL;
 
   return (
     <Helmet
@@ -45,6 +51,10 @@ const SEO = ({ description, lang, meta, title }) => {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: ogImageUrl
         },
         {
           property: `og:type`,

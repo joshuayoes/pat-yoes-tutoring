@@ -6,7 +6,7 @@ module.exports = {
       summary: `Pat has worked as a private tutor, public school teacher, and a tutoring business owner for over 30 years. He specializes in reading, math, writing, education counseling, and one-on-one tutoring.`,
     },
     description: `Online tutoring by Pat Yoes from Vancouver, Washington.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://patyoes.com`,
     social: {
       facebook: `patyoestutoring`
     },
@@ -60,13 +60,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Pat Yoes Online Tutoring`,
+        short_name: `Yoes Online Tutoring`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#297B2E`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,

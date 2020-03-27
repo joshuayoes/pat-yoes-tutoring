@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Strength from "../components/strength"
 import Booking from '../components/booking'
@@ -22,7 +21,7 @@ import phoneIcon from '../../static/icon-phone.svg'
 
 
 const Index = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
+  // const siteTitle = data.site.siteMetadata.title
   // const posts = data.allMarkdownRemark.edges
 
   return (
