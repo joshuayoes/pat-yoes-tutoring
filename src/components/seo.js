@@ -72,6 +72,10 @@ const SEO = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `fb:app_id`,
+          content: `597559947767257`
+        }
       ].concat(meta)}
     />
   )

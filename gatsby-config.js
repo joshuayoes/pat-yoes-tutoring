@@ -5,7 +5,7 @@ module.exports = {
       name: `Pat Yoes`,
       summary: `Pat has worked as a private tutor, public school teacher, and a tutoring business owner for over 30 years. He specializes in reading, math, writing, education counseling, and one-on-one tutoring.`,
     },
-    description: `Online tutoring by Pat Yoes from Vancouver, Washington.`,
+    description: `Pat Yoes has worked as a private tutor, public school teacher, and a tutoring business owner for over 30 years. He specializes in reading, math, writing, education counseling, and one-on-one tutoring.`,
     siteUrl: `http://patyoes.com`,
     social: {
       facebook: `patyoestutoring`
