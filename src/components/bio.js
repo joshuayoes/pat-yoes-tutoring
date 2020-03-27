@@ -60,7 +60,7 @@ const Bio = () => {
         Written by <strong>{author.name}</strong>. {author.summary}
         {` `}
         <Link to='./#booking'>
-          Book a free first tutoring appointment with him now. 
+          Book a free tutoring consultation with him now. 
         </Link>
       </p>
     </div>

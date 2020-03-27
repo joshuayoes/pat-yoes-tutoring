@@ -77,7 +77,7 @@ const Booking = () => {
             <form onSubmit={handleSubmit}>
                 {requestStatus === 'UNSENT' &&
                     <>
-                        <h1 className={style.h1}>Book Your First Free Appointment</h1>
+                        <h1 className={style.h1}>Book Your Free First Appointment</h1>
                         <TextField 
                             name="name"
                             label="Full Name"
