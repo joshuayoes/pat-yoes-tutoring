@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { TextField } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
+import facebookTrack from '../utils/facebook-track'
 import style from '../styles/booking.module.css'
 import successSvg from '../../static/icon-success.svg'
 import errorSvg from '../../static/icon-error.svg'
@@ -59,9 +60,9 @@ const Booking = () => {
 
         postData('https://getform.io/f/5d72b9dd-f1f1-4360-a1a6-7c387be5f432', formInput)
             .then((response) => {
-                // console.log(response)
                 if (response.success === true){
-                    setRequestStatus('SENT')
+                    setRequestStatus('SENT');
+                    facebookTrack('track', 'Contact');
                 }
             })
             .catch((error) => {
